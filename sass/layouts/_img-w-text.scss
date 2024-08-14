@@ -1,0 +1,123 @@
+.img-w-text {
+  margin-bottom: 112px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 80px;
+  }
+
+  &__desktop-img {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__mobile-img {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  .container {
+    max-width: 1439px;
+    gap: 110px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+      gap: 0;
+    }
+  }
+
+  &__content {
+    max-width: 573px;
+
+    @media (max-width: 767px) {
+      padding: 120px 55px 28px 55px;
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center;
+    }
+
+    span {
+      display: block;
+      font-weight: var(--fw-bold);
+      color:var(--color-4);
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color:var(--color-1);
+      max-width: 387px;
+      margin-bottom: 30px;
+
+      @media (max-width:767px ) {
+        max-width: 303px;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+    }
+
+    p {
+      max-width: 376px;
+      color: var(--color-3);
+      font-size: 20px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+
+      @media (max-width: 767px) {
+        max-width: 262px;
+        text-align: center;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  &__cta {
+    max-width: 339px;
+    gap: 10px; 
+    
+    @media (max-width: 767px) {
+      gap: 25px;
+      max-width: 165px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .btn {
+      line-height: 1.5;
+
+      &__desktop {
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      &__mobile {
+        display: none;
+        border: 1px solid var(--color-6);
+        color: var(--color-6);
+        max-width: 165px;
+        white-space: nowrap;
+
+        @media (max-width: 767px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      &--primary {
+        @media (max-width: 767px) {
+          background-color: var(--color-6);
+        }
+      }
+    }
+  }
+}

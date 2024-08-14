@@ -1,0 +1,32 @@
+.about-us {
+  background-color: var(--color-9);
+  
+  .container {
+    padding: 53px 0;
+    border-bottom: 1px solid var(--color-12);
+    margin-bottom: 4px;
+
+    @media (max-width: 1110px) {
+      padding-inline: 20px;
+
+    }
+
+    @media (max-width: 767px) {
+      max-width: 243px;
+      flex-direction: column;
+      padding: 53px 0 40px 44px;
+      gap: 24px;
+      margin: 0;
+    }
+  }
+
+  &__logo {
+    max-width: 114px;
+    width: 100%;
+  }
+
+  &__socials {
+    max-width: 112px;
+    gap: 20px;
+  }
+}

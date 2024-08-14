@@ -1,0 +1,33 @@
+.btn {
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: var(--fw-bold);
+
+  &--primary {
+    background-color: var(--color-5);
+    color: var(--color-2);
+  }
+
+  &--outline {
+    background-color: var(--color-2);
+    border:1px solid var(--color-5);
+    color: var(--color-5);
+  }
+
+  &__cta {
+    background-color:var(--color-6);
+    color: var(--color-2);
+  }
+
+  &__tag {
+    position: absolute;
+    background-color: var(--color-2);
+    color: var(--color-1);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    border-radius: unset;
+  }
+}

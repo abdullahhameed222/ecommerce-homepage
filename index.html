@@ -1,13 +1,600 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page - Ecommerce</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <section class="announcement-bar">
+      <div class="container flex flex-justify-between flex-align-center">
+        <div class="announcement-bar__cta w-100 flex flex-justify-between">
+          <div class="announcement-bar__contact flex align-center">
+            <img src="assets/icons/icon-phone.svg" alt="icon-phone">
+            <span class="text-sm">(225) 555-0118</span>
+          </div>
+          <div class="announcement-bar__contact flex align-center">
+            <img src="assets/icons/icon-mail.svg" alt="icon-mail">
+            <span class="text-sm">michelle.rivera@example.com</span>
+          </div>
+        </div>
+
+        <div class="announcement-bar__announcement">
+          <p>Follow Us and get a chance to win 80% off</p>
+        </div>
+
+        <div class="announcement-bar__socials flex flex-justify-between">
+          Follow Us
+          <span>:</span>
+          <div class="flex announcement-bar__icons flex-justify-between flex-wrap flex-align-center"
+            alt="social-icons">
+            <a href="#">
+              <img src="assets/icons/icon-instagram.svg" alt="icon-instagram">
+            </a>
+
+            <a href="#">
+              <img src="assets/icons/icon-youtube.svg" alt="icon-youtube">
+            </a>
+
+            <a href="#">
+              <img src="assets/icons/icon-facebook.svg" alt="icon-youtube">
+            </a>
+
+            <a href="#">
+              <img src="assets/icons/icon-twitter.svg" alt="icon-twitter">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar">
+      <div class="container flex flex-justify-between">
+        <a href="#" class="navbar__logo">
+          <img src="assets/icons/logo.svg" alt="logo">
+        </a>
+        <nav class="navbar__nav">
+          <ul class="navbar__list flex flex-wrap align-center flex-align-center">
+            <li><a href="#">Home</a></li>
+            <li class="flex">
+              <a href="#">Shop</a>
+              <img src="assets/icons/icon-chevron-down.svg" alt="icon-chevron-down">
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog </a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Pages</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbar__icons flex flex-justify-between flex-align-center">
+          <div class="navbar__icons-user flex flex-align-center">
+            <img src="assets/icons/icon-user.svg" alt="icon-user">
+            <span class="text-sm">Login / Register</span>
+          </div>
+
+          <div class="navbar__icons-search">
+            <img src="assets/icons/icon-search.svg" alt="icon-search">
+            <img src="assets/icons/icon-search-blue.svg" alt="icon search">
+          </div>
+
+          <div class="navbar__icons-cart flex flex-align-center">
+            <img src="assets/icons/icon-cart.svg"  alt="icon cart">
+            <img src="assets/icons/icon-cart-blue.svg" alt="icon cart">
+          </div>
+
+          <div class="navbar__icons-actions flex flex-align-center">
+            <img src="assets/icons/icon-like.svg" alt="icon-user">
+            <img src="assets/icons/icon-hamburger.svg" class="navbar__icons-hamburger" alt="icon hamburger">
+            <img src="assets/icons/icon-close.svg" class="navbar__icons-close" alt="icon close">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="slider swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide relative">
+          <img src="assets/images/img-slider-mobile-1.jpg" class="slider__mobile-img w-100" alt="slider-bg-mobile">
+          <img src="assets/images/img-slider-desktop-1.jpg" class="slider__desktop-img w-100" alt="hero-img">
+          <div class="slider__slide absolute">
+            <span class="text-md text-uppercase">summer 2020</span>
+            <h1 class="text-uppercase">New Collection</h1>
+            <p>We know how large objects will act,
+              but things on a small scale.
+            </p>
+            <a href="#" class="btn btn--primary">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="assets/images/img-hero-slider-2.jpg" class="slider__img w-100" alt="hero-img">
+          <div class="slider__slide absolute">
+            <span class="text-md text-uppercase">summer 2020</span>
+            <h1 class="text-uppercase">New Collection</h1>
+            <p>We know how large objects will act,
+              but things on a small scale.
+            </p>
+            <a href="#" class="btn btn--primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next">
+        <img src="assets/icons/icon-chevron-right.svg" alt="icon chevron right">
+      </div>
+      <div class="swiper-button-prev">
+        <img src="assets/icons/icon-chevron-left.svg" alt="icon left chevron">
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="categories animate-hidden">
+      <div class="container">
+        <div class="categories__header">
+          <h3 class="text-uppercase text-center">editor's pick</h3>
+          <p class="text-center">Problems trying to resolve the conflict between</p>
+        </div>
+
+        <div class="categories__container flex flex-wrap">
+          <div class="categories__category relative animate-hidden">
+            <img src="assets/images/img-category-1.png" class="categories__img-desktop" alt="img of a category">
+            <img src="assets/images/img-category-mobile-1.png" class="categories__img-mobile" alt="img of a category">
+            <a href="#" class="btn btn__tag">men</a>
+          </div>
+
+          <div class="categories__category relative animate-hidden">
+            <img src="assets/images/img-category-2.png" class="categories__img-desktop" alt="img of a category">
+            <img src="assets/images/img-category-mobile-2.png" class="categories__img-mobile" alt="img of a category">
+            <a href="#" class="btn btn__tag">women</a>
+          </div>
+
+          <div class="flex flex-col categories__inner">
+            <div class="categories__category relative animate-hidden">
+              <img src="assets/images/img-category-3.png" class="categories__img-desktop" alt="img of a category">
+              <img src="assets/images/img-category-mobile-3.png" class="categories__img-mobile" alt="img of a category">
+              <a href="#" class="btn btn__tag">accessories</a>
+            </div>
+  
+            <div class="categories__category relative animate-hidden">
+              <img src="assets/images/img-category-4.png" class="categories__img-desktop" alt="img of a category">
+              <img src="assets/images/img-category-mobile-4.png" class="categories__img-mobile" alt="img of a category">
+              <a href="#" class="btn btn__tag">kids</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-products animate-hidden">
+      <div class="container">
+        <div class="featured-products__header flex flex-col flex-align-center">
+          <span class="text-center">Featured Products</span>
+          <h3 class="text-uppercase text-center">bestseller Products</h3>
+          <p class="text-center">Problems trying to resolve the conflict between </p>
+        </div>
+
+        <div class="featured-products__wrapper flex flex-align-center flex-justify-center flex-wrap animate-hidden">
+          <div class="featured-products__product flex flex-col flex-align-center animate-hidden">
+            <img src="assets/images/img-product-1.png" class="featured-products__desktop-img" alt="product-img">
+            <img src="assets/images/img-product-mobile-1.png" class="featured-products__mobile-img" alt="product-img">
+            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span class="text-md">$16.48</span>
+            <div class="featured-products__colors flex flex-wrap">
+              <div class="featured-products__color featured-products__color--blue"></div>
+              <div class="featured-products__color featured-products__color--green"></div>
+              <div class="featured-products__color featured-products__color--orange"></div>
+              <div class="featured-products__color featured-products__color--darkblue"></div>
+            </div>
+          </div>
+
+          <div class="featured-products__product flex flex-col flex-align-center animate-hidden">
+            <img src="assets/images/img-product-2.png" class="featured-products__desktop-img" alt="product-img">
+            <img src="assets/images/img-product-mobile-2.png" class="featured-products__mobile-img" alt="product-img">            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span class="text-md">$16.48</span>
+            <div class="featured-products__colors flex flex-wrap">
+              <div class="featured-products__color featured-products__color--blue"></div>
+              <div class="featured-products__color featured-products__color--green"></div>
+              <div class="featured-products__color featured-products__color--orange"></div>
+              <div class="featured-products__color featured-products__color--darkblue"></div>
+            </div>
+          </div>
+
+          <div class="featured-products__product flex flex-col flex-align-center animate-hidden">
+            <img src="assets/images/img-product-3.png" class="featured-products__desktop-img" alt="product-img">
+            <img src="assets/images/img-product-mobile-3.png" class="featured-products__mobile-img" alt="product-img">            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span class="text-md">$16.48</span>
+            <div class="featured-products__colors flex flex-wrap">
+              <div class="featured-products__color featured-products__color--blue"></div>
+              <div class="featured-products__color featured-products__color--green"></div>
+              <div class="featured-products__color featured-products__color--orange"></div>
+              <div class="featured-products__color featured-products__color--darkblue"></div>
+            </div>
+          </div>
+
+          <div class="featured-products__product flex flex-col flex-align-center animate-hidden">
+            <img src="assets/images/img-product-4.png" class="featured-products__desktop-img" alt="product-img">
+            <img src="assets/images/img-product-mobile-4.png" class="featured-products__mobile-img" alt="product-img">            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span class="text-md">$16.48</span>
+            <div class="featured-products__colors flex flex-wrap">
+              <div class="featured-products__color featured-products__color--blue"></div>
+              <div class="featured-products__color featured-products__color--green"></div>
+              <div class="featured-products__color featured-products__color--orange"></div>
+              <div class="featured-products__color featured-products__color--darkblue"></div>
+            </div>
+          </div>
+
+          <div class="featured-products__product flex flex-col flex-align-center animate-hidden">
+            <img src="assets/images/img-product-5.png" class="featured-products__desktop-img" alt="product-img">
+            <img src="assets/images/img-product-mobile-5.png" class="featured-products__mobile-img" alt="product-img">            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span class="text-md">$16.48</span>
+            <div class="featured-products__colors flex flex-wrap">
+              <div class="featured-products__color featured-products__color--blue"></div>
+              <div class="featured-products__color featured-products__color--green"></div>
+              <div class="featured-products__color featured-products__color--orange"></div>
+              <div class="featured-products__color featured-products__color--darkblue"></div>
+            </div>
+          </div>
+
+          <div class="featured-products__product flex flex-col flex-align-center animate-hidden">
+            <img src="assets/images/img-product-6.png" class="featured-products__desktop-img" alt="product-img">
+            <img src="assets/images/img-product-mobile-6.png" class="featured-products__mobile-img" alt="product-img">            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span class="text-md">$16.48</span>
+            <div class="featured-products__colors flex flex-wrap">
+              <div class="featured-products__color featured-products__color--blue"></div>
+              <div class="featured-products__color featured-products__color--green"></div>
+              <div class="featured-products__color featured-products__color--orange"></div>
+              <div class="featured-products__color featured-products__color--darkblue"></div>
+            </div>
+          </div>
+
+          <div class="featured-products__product flex flex-col flex-align-center animate-hidden">
+            <img src="assets/images/img-product-7.png" class="featured-products__desktop-img" alt="product-img">
+            <img src="assets/images/img-product-mobile-6.png" class="featured-products__mobile-img" alt="product-img">            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span class="text-md">$16.48</span>
+            <div class="featured-products__colors flex flex-wrap">
+              <div class="featured-products__color featured-products__color--blue"></div>
+              <div class="featured-products__color featured-products__color--green"></div>
+              <div class="featured-products__color featured-products__color--orange"></div>
+              <div class="featured-products__color featured-products__color--darkblue"></div>
+            </div>
+          </div>
+
+          <div class="featured-products__product flex flex-col flex-align-center animate-hidden">
+            <img src="assets/images/img-product-8.png" class="featured-products__desktop-img" alt="product-img">
+            <img src="assets/images/img-product-mobile-7.png" class="featured-products__mobile-img" alt="product-img">            <h5>Graphic Design</h5>
+            <p>English Department</p>
+            <span class="text-md">$16.48</span>
+            <div class="featured-products__colors flex flex-wrap">
+              <div class="featured-products__color featured-products__color--blue"></div>
+              <div class="featured-products__color featured-products__color--green"></div>
+              <div class="featured-products__color featured-products__color--orange"></div>
+              <div class="featured-products__color featured-products__color--darkblue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider slider--secondary swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider__slide relative">
+            <img src="assets/images/img-slider-bg-desktop.png" class="absolute slider__bg-desktop" alt="hero-img">
+            <img src="assets/images/img-slider-bg-mobile.png" class="absolute slider__bg-mobile" alt="hero-img">            
+            <div class="slider__content">
+              <span class="text-md text-uppercase">summer 2020</span>
+              <h1>Vita Classic Product</h1>
+              <p>We know how large objects will act, but things on a small scale</p>
+              <div class="slider__cta flex flex-align-center flex-justify-between">
+                <span>$16.48</span>
+                <a href="#" class="btn btn--primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide relative">
+          <img src="assets/images/img-slider-bg-desktop.png" class="absolute slider__bg-desktop" alt="hero-img">
+          <img src="assets/images/img-slider-bg-mobile.png" class="absolute slider__bg-mobile" alt="hero-img">
+          <div class="slider__slide">
+            <span class="text-md text-uppercase">summer 2020</span>
+            <h1>Vita Classic Product</h1>
+            <p>We know how large objects will act, We know how are objects will act,
+              We know
+            </p>
+            <div class="slider__cta flex flex-align-center flex-justify-between">
+              <span>$16.48</span>
+              <a href="#" class="btn btn--primary">Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next">
+        <img src="assets/icons/icon-chevron-right.svg" alt="icon chevron">
+      </div>
+
+      <div class="swiper-button-prev">
+        <img src="assets/icons/icon-chevron-left.svg" alt="icon chevron">
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="img-w-text animate-hidden">
+      <div class="container flex flex-align-center flex-justify-center flex-wrap">
+        <div class="img-w-text__img">
+          <img src="assets/images/img-img-w-text.png" class="img-w-text__desktop-img" alt="img of a man and a women">
+          <img src="assets/images/img-img-w-text-mobile.png" class="img-w-text__mobile-img" alt="img of a man and a women">
+        </div>
+        <div class="img-w-text__content">
+          <span class="text-md text-uppercase">summer 2020</span>
+          <h2>Part of the Neural Universe</h2>
+          <p>We know how large objects will act, 
+            but things on a small scale.</p>
+            <div class="img-w-text__cta flex">
+              <a href="#" class="btn btn--primary text-sm">buy now</a>
+              <a href="#" class="btn btn--outline btn__desktop text-sm">read more</a>
+              <a href="#" class="btn btn--outline btn__mobile text-sm">Learn More</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-posts animate-hidden">
+      <div class="container flex flex-align-center flex-col flex-justify-center">
+        <div class="featured-posts__header flex flex-align-center flex-col">
+          <span class="text-md">Practice Advice</span>
+          <h2 class="featured-posts__heading-desktop">Featured Posts</h2>
+          <h2 class="featured-posts__heading-mobile">Featured Products</h2>
+          <p class="text-sm text-center featured-posts__text-desktop">Problems trying to resolve the conflict between 
+            the two major realms of Classical physics: Newtonian mechanics</p>
+          <p class="featured-posts__text-mobile ">Problems trying to resolve the conflict between the two major</p>
+        </div>
+
+        <div class="featured-posts__container container flex flex-wrap flex-justify-start">
+          <div class="featured-posts__post">
+            <div class="featured-posts__img relative">
+              <img src="assets/images/img-post-1-desktop.png" class="featured-posts__img-desktop" alt="img of a post">
+              <img src="assets/images/img-post-1-mobile.png" class="featured-posts__img-mobile" alt="img of a post">
+              <div class="featured-posts__tag text-sm flex flex-align-center flex-justify-center text-center text-uppercase absolute">new</div>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__tags flex flex-align-center">
+                <span>Google</span>
+                <span>Trending</span>
+                <span>New</span>
+              </div>
+              <h4>Loudest à la Madison #1 (L'integral)</h4>
+              <p>We focus on ergonomics and meeting you where you work. It's only a 
+                keystroke away.</p>
+              <div class="featured-posts__details flex flex-justify-between">
+                <div class="featured-posts__info flex">
+                  <img src="assets/icons/icon-clock.svg" alt="clock img">
+                  <span>22 April 2021</span>
+                </div>
+  
+                <div class="featured-posts__info flex">
+                  <img src="assets/icons/icon-graph.svg" alt="graph img">
+                  <span>10 comments</span>
+                </div>
+              </div>
+  
+              <div class="featured-posts__cta flex flex-align-center flex-justify-between">
+                <span class="text-sm">Learn More</span>
+                <img src="assets/icons/icon-chevron-right-blue.svg" alt="icon right chevron">
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-posts__post">
+            <div class="featured-posts__img relative">
+              <img src="assets/images/img-post-2-desktop.png" class="featured-posts__img-desktop" alt="img of a post">
+              <img src="assets/images/img-post-2-mobile.png" class="featured-posts__img-mobile" alt="img of a post">
+              <div class="featured-posts__tag text-sm flex flex-align-center flex-justify-center text-center text-uppercase absolute">new</div>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__tags flex flex-align-center">
+                <span>Google</span>
+                <span>Trending</span>
+                <span>New</span>
+              </div>
+              <h4>Loudest à la Madison #1 (L'integral)</h4>
+              <p>We focus on ergonomics and meeting you where you work. It's only a 
+                keystroke away.</p>
+              <div class="featured-posts__details flex flex-justify-between">
+                <div class="featured-posts__info flex">
+                  <img src="assets/icons/icon-clock.svg" alt="clock img">
+                  <span>22 April 2021</span>
+                </div>
+  
+                <div class="featured-posts__info flex">
+                  <img src="assets/icons/icon-graph.svg" alt="graph img">
+                  <span>10 comments</span>
+                </div>
+              </div>
+  
+              <div class="featured-posts__cta flex flex-align-center flex-justify-between">
+                <span class="text-sm">Learn More</span>
+                <img src="assets/icons/icon-chevron-right-blue.svg" alt="icon right chevron">
+              </div>
+            </div>
+          </div>
+
+          <div class="featured-posts__post">
+            <div class="featured-posts__img relative">
+              <img src="assets/images/img-post-3-desktop.png" class="featured-posts__img-desktop" alt="img of a post">
+              <img src="assets/images/img-post-3-mobile.png" class="featured-posts__img-mobile" alt="img of a post">
+              <div class="featured-posts__tag text-sm flex flex-align-center flex-justify-center text-center text-uppercase absolute">new</div>
+            </div>
+            <div class="featured-posts__content">
+              <div class="featured-posts__tags flex flex-align-center">
+                <span>Google</span>
+                <span>Trending</span>
+                <span>New</span>
+              </div>
+              <h4>Loudest à la Madison #1 (L'integral)</h4>
+              <p>We focus on ergonomics and meeting you where you work. It's only a 
+                keystroke away.</p>
+              <div class="featured-posts__details flex flex-justify-between">
+                <div class="featured-posts__info flex">
+                  <img src="assets/icons/icon-clock.svg" alt="clock img">
+                  <span>22 April 2021</span>
+                </div>
+  
+                <div class="featured-posts__info flex">
+                  <img src="assets/icons/icon-graph.svg" alt="graph img">
+                  <span>10 comments</span>
+                </div>
+              </div>
+  
+              <div class="featured-posts__cta flex flex-align-center flex-justify-between">
+                <span class="text-sm">Learn More</span>
+                <img src="assets/icons/icon-chevron-right-blue.svg" alt="icon right chevron">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <div class="container flex flex-justify-between">
+        <img src="assets/icons/logo.svg" alt="logo" class="about-us__logo">
+        <div class="about-us__socials flex">
+          <img src="assets/icons/icon-facebook-blue.svg" alt="facebook icon">
+          <img src="assets/icons/icon-instagram-blue.svg" alt="instagram icon">
+          <img src="assets/icons/icon-twitter-blue.svg" alt="twitter icon">
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container flex flex-justify-between">
+      <div class="footer__nav">
+        <span class="text-md">Company Info</span>
+        <ul class="footer__list flex flex-col"> 
+          <li>
+            <a href="#">About Us</a>
+          </li>
+
+          <li>
+            <a href="#">About Us</a>
+          </li>
+
+          <li>
+            <a href="#">Carrier</a>
+          </li>
+          
+          <li>
+            <a href="#">We are hiring</a>
+          </li>
+
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <span class="text-md">Legal</span>
+        <ul class="footer__list flex flex-col"> 
+          <li>
+            <a href="#">About Us</a>
+          </li>
+
+          <li>
+            <a href="#">Carrier</a>
+          </li>
+
+          <li>
+            <a href="#">We are hiring</a>
+          </li>
+          
+          <li>
+            <a href="#">Blog</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <span class="text-md">Features</span>
+        <ul class="footer__list flex flex-col"> 
+          <li>
+            <a href="#">Business Marketing</a>
+          </li>
+
+          <li>
+            <a href="#">User Analytic</a>
+          </li>
+
+          <li>
+            <a href="#">Live Chat</a>
+          </li>
+          
+          <li>
+            <a href="#">Unlimited Support</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <span class="text-md">Resources</span>
+        <ul class="footer__list flex flex-col"> 
+          <li>
+            <a href="#">IOS & Andriod</a>
+          </li>
+
+          <li>
+            <a href="#">Watch & Demo</a>
+          </li>
+
+          <li>
+            <a href="#">Customers</a>
+          </li>
+          
+          <li>
+            <a href="#">API</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__nav">
+        <span class="text-md">Get In Touch</span>
+        
+        <form>
+          <div class="sign-up__form">
+            <input type="text" placeholder="Your Email">
+            <button type="submit" value="Submit">Subscribe</button>
+          </div>
+          <p class="footer__lorem">Lore imp sum dolor Amit</p>
+        </form> 
+      </div>
+    </div>
+
+    <div class="footer__copyright">
+      <div class="container">
+        <p>Made With Love By Finland All Right Reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+<script defer src="assets/js/swiper.min.js"></script>
+<script defer src="assets/js/slider.js"></script>
+<script defer src="assets/js/script.js"></script>
+
 </html>

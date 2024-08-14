@@ -1,0 +1,27 @@
+.sign-up__form {
+  display: flex;
+
+  input[type="text"] {
+    background-color: var(--color-13) ;
+    border: 1px solid var(--color-12);
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    &::placeholder {
+      color: var(--color-3);
+      font-size: 14px;
+      padding-left: 22px;
+    }
+  }
+
+  button[type="submit"] {
+    padding: 15px 22px;
+    font-size: 14px;
+    color: var(--color-2);
+    background-color: var(--color-6) ;
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}
